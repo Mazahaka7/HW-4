@@ -172,15 +172,17 @@ main{
 .selection-title{
     font-weight: 28px;
     line-height: 1.3;
+    color:rgba(0, 0, 0, 0.61);
 }
 .arrow{
     padding: 5px;
     margin-left: 40%;
 }
 .cards{
-    margin-top: 30px;;
+    margin-top: 30px;
+    position: relative;
 }
-.card{
+.cards-item{
     display: flex;
     justify-content: space-between;
 
@@ -188,11 +190,47 @@ main{
     background: var(--card-gradient);
     margin-top: 55px;
 }
-.card img{
+.cards-item img{
     margin: 30px 50px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+.svg-item{
+    width: 48px;
+    height: 46px;
+    fill:white;
+
+}
+.cards-item:hover .svg-item{
+    fill: var(--star-accent);
+}
+.card-title{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.3;
+    color: #353C57;
 }
 .card-text{
     min-height: 205px;
     margin-right: 50px;
+    text-align: left;
     background-color: #EDFBFF;
+}
+.link_position{
+    position: absolute;
+}
+.card-link{
+    display: block;
+    width:210px;
+    height: 46px;
+    background-color: var(--primery-blue-color);
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.card-link:hover{
+    background-color: var(--accent-rose-color);
 }
