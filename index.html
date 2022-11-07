@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="container">
-        <div class="header-nav">
+        <div id="top" class="header-nav">
           <div>
             <!-- <a href="./index.html"> -->
             <img class="logo" src="./img/img лого.svg" alt="Логотип" />
@@ -39,9 +39,7 @@
             <a class="nav-title" href="#" onclick="return false;"> Контакти</a>
           </div>
           <div>
-            <a class="nav-title" href="#" onclick="return false;"
-              >Особистий кабінет</a
-            >
+            <a class="nav-title" href="#cabinet">Особистий кабінет</a>
           </div>
           <div class="lang">
             <img src="./img/lang.svg" alt="Мова" />
@@ -49,7 +47,7 @@
           </div>
         </div>
       </div>
-      <div class="booking container">
+      <div class="booking">
         <h2 class="booking-header">Забронювати будинок</h2>
       </div>
     </header>
@@ -63,6 +61,7 @@
       </div>
       <!-- Section cards -->
       <section class="cards">
+        <!--Bakota card-->
         <div class="cards-item">
           <div>
             <img src="./img/bakota.jpeg" alt="Бакота" />
@@ -95,6 +94,7 @@
             <a class="card-link" href="#" onclick="return false;">Детальніше</a>
           </div>
         </div>
+        <!--Karpaty card-->
         <div class="cards-item">
           <div>
             <img src="./img/karpaty.jpeg" alt="Карпати" />
@@ -127,6 +127,7 @@
             <a class="card-link" href="#" onclick="return false;">Детальніше</a>
           </div>
         </div>
+        <!--Kyiv card-->
         <div class="cards-item">
           <div>
             <img src="./img/kyiv_region.jpeg" alt="Київщина" />
@@ -159,6 +160,7 @@
             <a class="card-link" href="#" onclick="return false;">Детальніше</a>
           </div>
         </div>
+        <!--Odesa card-->
         <div class="cards-item">
           <div>
             <img src="./img/odesa_region.jpeg" alt="Одещина" />
@@ -186,13 +188,64 @@
                 ще називають «українською Венецією». Вилкове - це містечко на
                 воді, весь в каналах. Розташоване в місці, де зустрічаються
                 річка Дунай і Чорне море. Люди пересуваються переважно човнами.
-                Нетипове українське село не залишить Вас без вражень.
               </p>
             </div>
             <a class="card-link" href="#" onclick="return false">Детальніше</a>
           </div>
         </div>
+        <div class="cards_btn-fixed">
+          <a href="#top">
+            <svg
+              width="101"
+              height="101"
+              viewBox="0 0 101 101"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="50.5"
+                cy="50.5"
+                r="50.5"
+                fill="#300C6A"
+                fill-opacity="0.3"
+              />
+              <path
+                d="M50.5 29L62 49.5H52.5V72.5H48.5V49.5H39L50.5 29Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
       </section>
+      <!--Section cabinet-->
     </main>
+    <section id="cabinet" class="cabinet">
+      <div class="cabinet_head">
+        <h2 class="cabinet-title">Особистий кабінет</h2>
+      </div>
+      <div class="cabinet_form container">
+        <ul class="cabinet_form-avatar">
+          <li class="avatar">
+            <a class="form-btn" href="">Змінити аватар</a>
+          </li>
+          <li>
+            <a class="form-btn setting" href="">Налаштування</a>
+          </li>
+        </ul>
+        <ul class="cabinet_form-information">
+          <li>Нищук Дмитро Миколайович</li>
+          <hr />
+          <li>Cтать: <span class="span_text">чоловіча</span></li>
+          <hr />
+          <li>Дата народження: <span class="span_text">10. 02. 1998</span></li>
+          <hr />
+          <li>
+            Мобільний телефон: <span class="span_text">+38(097)346-72-50</span>
+          </li>
+          <hr />
+          <li>Ел. пошта: <span class="span_text">petrov@gmail.com</span></li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
