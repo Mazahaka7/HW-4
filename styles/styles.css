@@ -360,8 +360,26 @@ main{
     width: 40%;
     height: 290px;
     border: 2px solid #000;
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
+}
+.cabinet_btn-exit{
+    position: relative;
+    top: 0;
+    left: 45%;
+    background-color:var(--primery-blue-color);
+    width: 175px;
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 28px;
+}
+.cabinet_btn-exit > a{
+    display: inline-block;
+    padding: 5px;
 }
 footer{
     font-weight: 700px;
