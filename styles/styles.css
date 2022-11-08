@@ -88,6 +88,7 @@ ul {
     list-style: none;
 }
 a{
+    
     text-decoration: none;
     color: #fff;
 }
@@ -111,7 +112,7 @@ body{
     background-color: #F5F5F5;
     color: #202846;
 }
-header{
+header, footer{
     background-color: var(--primery-blue-color);
     height: fit-content;
 }
@@ -141,6 +142,9 @@ header{
 .nav-title:hover, .lang-text:hover{
     color: var(--accent-card-color);
 }
+.nav-title:focus, .lang-text:focus{
+    color: var(--accent-card-color);
+}
 .lang > img{
     width:55px;
     height: 50px;
@@ -162,6 +166,7 @@ header{
     font-size: 44px;
     line-height: 1.2;
     padding: 15px 0 15px 15%;
+    
 }
 main{
     background-color: #F5F5F5;
@@ -192,19 +197,27 @@ main{
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     height: 300px;
     background: var(--card-gradient);
     margin-top: 55px;
 }
-.cards-item img{
-    margin: 30px 50px;
+.cards-item > .image{
+    padding: 30px 20px;
+}
+.cards_information{
+    max-height: 300px;
+    margin-right: 40px;
 }
 .card{
     display: flex;
     justify-content: space-between;
 }
 .svg-item{
+    position: absolute;
+    top: 5px;
+    right: 5px;
     width: 48px;
     height: 46px;
     fill:white;
@@ -221,17 +234,18 @@ main{
     color: #353C57;
 }
 .card-text{
-    min-height: 205px;
-    margin-right: 50px;
+    height: 190px;
     text-align: left;
     background-color: #EDFBFF;
+    overflow: auto;
 }
 .card-text > p{
-    padding: 10px;
+    padding: 10px 20px;
+
 }
 .card-link{
     position: absolute;
-    bottom: 10px;
+    bottom: 3px;
     right: -3%;
 }
 .card-link{
@@ -260,13 +274,16 @@ main{
     border-radius: 50%;
     background: rgba(48, 12, 106, 0.3);
 }
-.cabinet_head{
+.cabinet_head, .contacts_head{
     background: linear-gradient(90deg, #FFE601 0%, #55D6FF 100%);
-     height: fit-content;
+    height: fit-content;
     width: 100vw;
-    text-align: center;
+    text-align: left;
     font-size: 44px;
     color: #243B93;
+}
+.section-title{
+    padding-left: 10%;
 }
 .cabinet_form{
     display: flex;
@@ -275,12 +292,11 @@ main{
     
     margin-top: 30px;
     height: fit-content;
+    min-height: 498px;
 
     background: linear-gradient(180deg, #859EFF 0%, rgba(105, 255, 210, 0.5) 100%);
 }
-.cabinet_form-avatar{
-    margin-left: ;
-}
+
 .avatar::before{
     content: "";
     display: block;
@@ -292,7 +308,6 @@ main{
 }
 .form-btn{
     display: block;
-    /* width: fit-content; */
     background-color: #243B93;
     border-radius: 30px;
     font-size: 24px;
@@ -311,6 +326,49 @@ main{
     font-style: italic;
     line-height: 1.25;
 }
-.cabinet_form-information .span_text{
+.span_text{
     font-weight: 400px;
+    font-size: 24px;
+}
+
+.contacts{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contacts_content{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 30px;
+}
+.contacts_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 190px;
+}
+.contacts_list a{
+    color: #202846;
+}
+.contacts_list hr {
+    color: #202846;
+    background-color: #202846;
+    height: 3px;
+}
+.contacts_map{
+    width: 40%;
+    height: 290px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+footer{
+    font-weight: 700px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+footer > div{
+    padding: 20px 0;
 }
