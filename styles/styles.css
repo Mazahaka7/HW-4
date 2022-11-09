@@ -117,11 +117,8 @@ header, footer{
     height: fit-content;
 }
 .header-nav{
-    position: sticky;
-    z-index: 2;
-    /* top: 0; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .header-nav > .lang{
@@ -165,7 +162,7 @@ header, footer{
     font-style: italic;
     font-size: 44px;
     line-height: 1.2;
-    padding: 15px 0 15px 15%;
+    padding: 15px 0 15px 10%;
     
 }
 main{
@@ -187,7 +184,7 @@ main{
 }
 .arrow{
     padding: 5px;
-    margin-left: 40%;
+    margin-left: 30%;
 }
 .cards{
     margin-top: 30px;
