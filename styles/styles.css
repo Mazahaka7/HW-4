@@ -312,8 +312,8 @@ main{
     padding: 8px 16px;
     margin-top: 10px;
 }
-.setting{
-    background-color: #EF075B;
+.form-btn:hover, .cabinet_btn-exit:hover{
+    background-color: var(--accent-rose-color);
 }
 .cabinet_form-information{
     padding-top: 45px;
